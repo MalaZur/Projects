@@ -8,7 +8,7 @@ class Cactus(pygame.sprite.Sprite):
 
         images = ['largecactus1.png', 'largecactus2.png', 'largecactus3.png',
           'smallcactus1.png', 'smallcactus2.png', 'smallcactus3.png',]
-        image = os.path.join(r'pygame/chrome-dino/assets/images', choice(images))
+        image = os.path.join(r'assets/images', choice(images))
 
         self.image = pygame.image.load(image)
 

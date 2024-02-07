@@ -8,7 +8,7 @@ class Game(pygame.sprite.Sprite):
         self.step = 0
         self.points = 0
 
-        self.font = pygame.font.Font("pygame/chrome-dino/assets/fonts/gamefont.ttf", 20)
+        self.font = pygame.font.Font("assets/fonts/gamefont.ttf", 20)
         self.image = self.font.render(f"HI {self.points}", True, (83,83,83))
 
         self.rect = self.image.get_rect()
@@ -34,11 +34,11 @@ class GameOver(pygame.sprite.Sprite):
     def __init__(self,):
         super().__init__()
         
-        self.font = pygame.font.Font("pygame/chrome-dino/assets/fonts/gamefont.ttf", 20)
+        self.font = pygame.font.Font("assets/fonts/gamefont.ttf", 20)
         self.g_o = self.font.render(f"G A M E  O V E R", True, (83,83,83))
         self.rectg = self.g_o.get_rect()
 
-        self.reset = pygame.image.load("pygame/chrome-dino/assets/images/reset.png")
+        self.reset = pygame.image.load("assets/images/reset.png")
         self.rectr = self.reset.get_rect()
 
         surface = pygame.display.get_surface()

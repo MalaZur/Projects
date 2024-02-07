@@ -49,7 +49,7 @@ def main():
 
         for obstacle in obstacles:
             if pygame.sprite.collide_mask(player, obstacle) and not game_over:
-                pygame.mixer.Sound("pygame/chrome-dino/assets/sounds/die.wav").play()
+                pygame.mixer.Sound("assets/sounds/die.wav").play()
                 game_over = True
                 end = GameOver()
 

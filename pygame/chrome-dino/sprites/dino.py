@@ -4,8 +4,8 @@ from random import *
 class Dino(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image_run1 = pygame.image.load("pygame/chrome-dino/assets/images/1_.png")
-        self.image_run2 = pygame.image.load("pygame/chrome-dino/assets/images/2_.png")
+        self.image_run1 = pygame.image.load("assets/images/1_.png")
+        self.image_run2 = pygame.image.load("assets/images/2_.png")
 
         self.image = self.image_run1
         self.rect = self.image.get_rect()
@@ -18,7 +18,7 @@ class Dino(pygame.sprite.Sprite):
         self.step = 0
         self.height = 15
         self.jumping = False
-        self.sound_jump = pygame.mixer.Sound("pygame/chrome-dino/assets/sounds/jump.wav")
+        self.sound_jump = pygame.mixer.Sound("assets/sounds/jump.wav")
 
     def draw(self, surface):
         surface.blit(self.image, self.rect)

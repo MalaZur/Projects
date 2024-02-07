@@ -4,8 +4,8 @@ import pygame
 class Road(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("pygame/chrome-dino/assets/images/road.png")
-        self.image1 = pygame.image.load("pygame/chrome-dino/assets/images/road.png")
+        self.image = pygame.image.load("assets/images/road.png")
+        self.image1 = pygame.image.load("assets/images/road.png")
 
         self.rect = self.image.get_rect()
         self.rect1 = self.image1.get_rect()
