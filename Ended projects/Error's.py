@@ -11,7 +11,7 @@ windows.resizable(False, False)
 # Функции
 
 def equate():
-    if equation.get() == "Богдан":
+    if equation.get().lower() == "богдан":
         messagebox.showinfo('Вы вызвали гнев древнего божества!', 'Ждите бана в течении следующих 5-ти секунд')
     try:
         solution = eval(equation.get())
